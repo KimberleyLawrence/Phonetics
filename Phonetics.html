@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <body>
+
+    <div ng-app="myApp" ng-controller="myCtrl">
+        <input id="userinput" type="text" ng-model="userinput" ng-change="change()">
+        <h1 id="translated" ng-bind="translated"></h1>
+    </div>
+
+    <script>
+     var app = angular.module('myApp', []);
+     app.controller('myCtrl', function($scope) {
+         // MAP of letters to evil words!
+         var a = {
+         '.': "[STOP]",
+         ' ': "[SPACE]",
+         'a': "aaaaa",
+         'b': "bbbbb",
+         'c': "ccccc",
+         'd': "ddddd",
+         };
+         // When userinput is changed this function is called.
+         $scope.change = function() {
+         // Wipe out the translated string, because we are going to rebuild the string.
+         $scope.translated = '';
+         // for each letter in the inputword
+         for (var i = 0, len = $scope.userinput.length; i < len; i++) {
+             // Add the translated word for the letter, into the $scope.translated
+             $scope.translated += ' ' + a[$scope.userinput[i]];
+         }
+         };
+     });
+    </script>
+    </body>
+</html>
