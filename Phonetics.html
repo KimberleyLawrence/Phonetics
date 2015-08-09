@@ -6,22 +6,33 @@
     <title>Phonetics</title>
   </head>
     <body>
-        <br>
-        <div class="container">
+        <div class="whitespace"></div>
+        <div class="container" ng-app="myApp" ng-controller="myCtrl">
           <div class="header">
            Phonetics
-         </div>
+          </div>
+          <p id="sub_header"> Making phone conversations easier since 2015 </p>
+          <p> Simply select your style, add your text and repeat </p>
 
-        <br>
-          <div class="button" align="center"> Phonetic </div>
-          <div class="button"> Pho-net-cis </div>
-          <div class="button"> Evil </div>
+
+         <div class="whitespace"></div>
+          <div class="center_buttons">
+            <a href="#" ng-click="activate(0)">
+              <div class="button" ng-class="{'active':translate_index == 0}"> Phonetic </div>
+            </a>
+            <a href="#" ng-click="activate(1)">
+              <div class="button" ng-class="{'active':translate_index == 1}"> Pho-net-ics </div>
+            </a>
+            <a href="#" ng-click="activate(2)">
+              <div class="button" ng-class="{'active':translate_index == 2}"> Evil </div>
+            </a>
+          </div>
+        <div class="whitespace"></div>
+        <div  class="center_buttons">
+          <input id="userinput" type="text" ng-model="userinput" ng-change="change()" placeholder="Your text here">
+            <p id="translated" ng-bind="translated"></p>
+            <p>{{translate_index}}</p>
         </div>
-        <br>
-        <br>
-        <div ng-app="myApp" ng-controller="myCtrl">
-          <input id="userinput" type="text" ng-model="userinput" ng-change="change()">
-            <h1 id="translated" ng-bind="translated"></h1>
         </div>
 
 
@@ -30,24 +41,38 @@
      var app = angular.module('myApp', []);
      app.controller('myCtrl', function($scope) {
          // MAP of letters to evil words!
-         var a = {
-         '.': "[STOP]",
-         ' ': "[SPACE]",
-         'a': "aaaaa",
-         'b': "bbbbb",
-         'c': "ccccc",
-         'd': "ddddd",
+         var translate_map = {
+         'a': ["apple", "ah-pool", "are"],
          };
+         $scope.translated='Text will appear here';
+         $scope.translate_index=0;
          // When userinput is changed this function is called.
          $scope.change = function() {
+           if($scope.userinput.length == 0){
+             $scope.translated='Text will appear here';
+             return
+           }
          // Wipe out the translated string, because we are going to rebuild the string.
          $scope.translated = '';
          // for each letter in the inputword
-         for (var i = 0, len = $scope.userinput.length; i < len; i++) {
-             // Add the translated word for the letter, into the $scope.translated
-             $scope.translated += ' ' + a[$scope.userinput[i]];
-         }
+          for (var i = 0, len = $scope.userinput.length; i < len; i++) {
+
+             letter_that_should_be_tranlated = $scope.userinput[i]; // a
+
+             response_from_translate_map = translate_map[letter_that_should_be_tranlated];
+              if(response_from_translate_map == undefined){
+                $scope.translated += ' ' + letter_that_should_be_tranlated;
+              }
+              else{
+                $scope.translated += ' ' +  response_from_translate_map[$scope.translate_index];
+              }
+           }
          };
+         $scope.activate= function(index){
+           $scope.translate_index=index;
+            $scope.change();
+         }
+
      });
     </script>
     </body>
