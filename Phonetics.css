@@ -1,13 +1,19 @@
- .header{
-   color: White;
-   font-family: sans-serif;
-   font-size:2em;
+body{
+   margin:0px;
+   padding:0px;
  }
+
+ .header{
+   color: Black;
+   font-family: verdana, sans-serif;
+   font-size:3em;
+   text-align: center;
+   display:block;
+ }
+
 .container{
-  background-color: grey;
-  height:200px;
-  width:100%;
 }
+
 #userinput{
   font-style:courier, serif;
   border-style:ridge;
@@ -16,3 +22,35 @@
   height:50px;
   width:100%;
 }
+.button{
+  width: 150px;
+  height: 40px;
+  background-color: white;
+  border-color: black;
+  border-width: thick;
+  border-style: solid;
+  border-radius:5px;
+  color: black;
+  font-size:1em;
+  text-align: center;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 1.5em;
+}
+
+/*.b_left{
+  margin:0 auto;
+  margin-right:10px;
+  float:left;
+}
+.b_middle{
+    margin:0 auto;
+    margin:10px;
+    float:inherit;
+}
+.b_right{
+    margin:0 auto;
+    margin-left:10px;
+    float:right;
+}
+*/

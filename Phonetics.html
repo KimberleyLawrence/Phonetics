@@ -6,15 +6,25 @@
     <title>Phonetics</title>
   </head>
     <body>
-        <div class="header">
-          <div class="container">
+        <br>
+        <div class="container">
+          <div class="header">
            Phonetics
          </div>
+
+        <br>
+          <div class="button" align="center"> Phonetic </div>
+          <div class="button"> Pho-net-cis </div>
+          <div class="button"> Evil </div>
         </div>
+        <br>
+        <br>
         <div ng-app="myApp" ng-controller="myCtrl">
           <input id="userinput" type="text" ng-model="userinput" ng-change="change()">
             <h1 id="translated" ng-bind="translated"></h1>
         </div>
+
+
 
     <script type="">
      var app = angular.module('myApp', []);
