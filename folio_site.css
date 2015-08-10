@@ -1,0 +1,61 @@
+.header{
+   color: Black;
+   font-family: Futura, sans-serif;
+   font-size:9em;
+   text-align: center;
+}
+.container{
+  height: 300px;
+  width:100%;
+  background-color: grey;
+}
+p{
+  font-family:futura, sans-serif;
+  font-size:1em;
+  text-align: center;
+}
+img{
+  height:600px;
+  width:100%;
+  position: relative;
+}
+.text_on_image{
+  position: absolute;
+  width:100%;
+}
+
+#illustation{
+  font-size: 3em;
+}
+#sub_header{
+  font-family: futura, sans-serif;
+  font-size: 1.5em;
+  color: white;
+}
+.center_buttons{
+  margin-left: auto;
+  margin-right:auto;
+  text-align: center;
+}
+.whitespace{
+  height:30px;
+}
+.whitespace_lg{
+  height:50px;
+}
+
+.button{
+  width: 160px;
+  height: 30px;
+  background-color: white;
+  border-color: grey;
+  border-style: solid;
+  border-width:2px;
+  border-radius:5px;
+  color: black;
+  font-size:1em;
+  text-align: center;
+  display: inline-block;
+  font-family: Courier, serif;
+  font-size: 1.5em;
+}
