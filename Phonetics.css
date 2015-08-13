@@ -4,7 +4,6 @@
    font-size:9em;
    text-align: center;
 }
-
 p{
   font-family:futura, sans-serif;
   font-size:1em;
@@ -15,6 +14,10 @@ p{
   font-family: futura, sans-serif;
   font-size: 1.5em;
   color: grey;
+}
+.left_box{
+  margin-left: auto;
+  text-align: left;
 }
 .center_buttons{
   margin-left: auto;
@@ -40,27 +43,36 @@ p{
   font-family: Courier, serif;
   font-size: 1.5em;
 }
-#translated{
-  color:grey;
-  font-size: 1.5em;
-  font-family: sans-serif;
-}
+
+
 a{
   text-decoration: none;
 }
 .active{
   background-color: grey;
 }
-
 #userinput{
   font-style:courier, serif;
-  border-style:thin;
-  border-color:black;
-  border-radius:5px;
-  height:150px;
-  width:500px;
+  color: black;
+  font-size: 1.5em;
+  border-style: none;
+  text-align: center;
+}
+#translated{
   font-size: 1.5em;
   font-family: sans-serif;
   color: black;
   text-align: center;
+}
+.box{
+  border-width: 2px;
+  border-style: solid;
+  border-color:black;
+  border-radius:5px;
+  height:100px;
+  width:500px;
+  text-align: center;
+  display:inline-block;
+  margin-left: auto;
+  margin-right:auto;
 }
