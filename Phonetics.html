@@ -9,8 +9,8 @@
     <title>Phonetics</title>
   </head>
     <body>
-        <div class="whitespace"></div>
-        <div class="container" ng-app="myApp" ng-controller="myCtrl">
+
+        <div ng-app="myApp" ng-controller="myCtrl">
           <div class="header">
             Phonetics
           </div>
@@ -18,10 +18,11 @@
             <p> Simply select your style, add your text and repeat </p>
             <div class="center_buttons">
               <div class="box">
-                <input id="userinput" type="text" ng-model="userinput" ng-change="change()" placeholder="Your text here"></div>
-                <div class="box">
-                  <div id="translated" ng-bind="translated"></div>
-                </div>
+                <input id="userinput" type="text" ng-model="userinput" ng-change="change()" placeholder="Your text here">
+              </div>
+              <div class="box" ng-bind="translated">
+                <div id="translated"></div>
+              </div>
             </div>
           <div class="center_buttons">
             <div class="button" ng-class="{'active':translate_index == 0}" ng-click="activate(0)"> Phonetic </div>

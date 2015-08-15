@@ -1,61 +1,103 @@
 .header{
-   color: Black;
+   color: Grey;
    font-family: Futura, sans-serif;
    font-size:9em;
    text-align: center;
-}
-.container{
-  height: 300px;
-  width:100%;
-  background-color: grey;
-}
-p{
-  font-family:futura, sans-serif;
-  font-size:1em;
-  text-align: center;
-}
-img{
-  height:600px;
-  width:100%;
-  position: relative;
-}
-.text_on_image{
-  position: absolute;
-  width:100%;
-}
-
-#illustation{
-  font-size: 3em;
+   background-size: 100px;
+   background-color: pink;
+   opacity: 0.5;
+   z-index: 1;
 }
 #sub_header{
   font-family: futura, sans-serif;
   font-size: 1.5em;
-  color: white;
-}
-.center_buttons{
-  margin-left: auto;
-  margin-right:auto;
+  color: grey;
   text-align: center;
 }
-.whitespace{
-  height:30px;
+#intro{
+  font-family: futura, sans-serif;
+  font-size: 1em;
+  color: grey;
+  text-align: center;
 }
-.whitespace_lg{
-  height:50px;
+.container{
+  height: 300px;
+  width:100%;
 }
-
-.button{
-  width: 160px;
-  height: 30px;
-  background-color: white;
-  border-color: grey;
-  border-style: solid;
-  border-width:2px;
-  border-radius:5px;
-  color: black;
+h1{
+  font-family:futura, sans-serif;
   font-size:1em;
   text-align: center;
-  display: inline-block;
-  font-family: Courier, serif;
+  position:relative;
+  z-index: 5;
+  text-align: center;
+}
+.floating_banner{
+  height:50px;
+  width: 100%;
+  background-color: pink;
+  opacity: 0.5;
+  position:absolute;
+  z-index: 7;
+  margin-top: 420px;
+}
+.illustration{
+  z-index: 1;
+  height:500px;
+  width:100%;
+  overflow: hidden;
+  background: url("http://abduzeedo.com/files/originals/space-theme.jpg") center;
+}
+.type{
+  z-index: 1;
+  height:500px;
+  width:100%;
+  overflow: hidden;
+  background: url("http://www.ladytragik.com/temp/bound.jpg") center;
+}
+.handlettering{
+  z-index: 1;
+  height:500px;
+  width:100%;
+  overflow: hidden;
+  background-image: url("http://41.media.tumblr.com/afddfc93909f6c62a882f2f9cfefe18e/tumblr_n2p2cdydz81rte5gyo3_1280.jpg");
+  background-position: center;
+}
+.printed{
+  z-index: 1;
+  height:500px;
+  width:100%;
+  overflow: hidden;
+  background: url("http://buttonmanprinting.com/wp-content/uploads/2012/01/business-cards.jpg") center;
+}
+.web{
+  z-index: 1;
+  height:500px;
+  width:100%;
+  overflow: hidden;
+  background: url("http://cdn2.hubspot.net/hub/356930/file-738573519-jpg/Blog_Post_Images/shutterstock_176303801.jpg") center;
+}
+.cakes{
+  z-index: 1;
+  height:500px;
+  width:100%;
+  overflow: hidden;
+  background: url("http://foodnetwork.sndimg.com/content/dam/images/food/fullset/2015/1/6/0/fnd_naked-chocolate-cake-i-am-baker.jpg.rend.snigalleryslide.jpeg") center;
+}
+.contact{
+  height:50px;
+  width: 100%;
+  background-color: pink;
+  opacity: 0.5;
+  position:absolute;
+  z-index: 1;
+}
+a{
+  font-family: futura, sans-serif;
   font-size: 1.5em;
+  color: grey;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  z-index:2;
 }
