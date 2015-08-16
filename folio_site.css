@@ -8,13 +8,13 @@
    opacity: 0.5;
    z-index: 1;
 }
-#sub_header{
+.sub_header{
   font-family: futura, sans-serif;
   font-size: 1.5em;
   color: grey;
   text-align: center;
 }
-#intro{
+.intro{
   font-family: futura, sans-serif;
   font-size: 1em;
   color: grey;
@@ -30,7 +30,6 @@ h1{
   text-align: center;
   position:relative;
   z-index: 5;
-  text-align: center;
 }
 .floating_banner{
   height:50px;
@@ -91,13 +90,16 @@ h1{
   opacity: 0.5;
   position:absolute;
   z-index: 1;
-}
-a{
   font-family: futura, sans-serif;
   font-size: 1.5em;
   color: grey;
   text-align: center;
   display: inline-block;
+}
+a{
   text-decoration: none;
-  z-index:2;
+}
+
+a:hover{
+  color: black;
 }
