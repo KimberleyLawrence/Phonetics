@@ -3,30 +3,38 @@
    font-family: Futura, sans-serif;
    font-size:9em;
    text-align: center;
-   background-size: 100px;
-   background-color: pink;
    opacity: 0.5;
-   z-index: 1;
+   z-index: 5;
 }
 .sub_header{
   font-family: futura, sans-serif;
   font-size: 1.5em;
   color: grey;
   text-align: center;
+  z-index: 5;
 }
 .intro{
   font-family: futura, sans-serif;
   font-size: 1em;
   color: grey;
   text-align: center;
+  z-index: 5;
 }
-.container{
+.deco_bar{
+  height:300px;
+  width:200px;
+  background-color: pink;
+  opacity: 0.5;
+  z-index: 1;
+  position: absolute;
+}
+/*.container{
   height: 300px;
   width:100%;
-}
+}*/
 h1{
   font-family:futura, sans-serif;
-  font-size:1em;
+  font-size:2em;
   text-align: center;
   position:relative;
   z-index: 5;
@@ -41,21 +49,21 @@ h1{
   margin-top: 420px;
 }
 .illustration{
-  z-index: 1;
+  z-index: 2;
   height:500px;
   width:100%;
   overflow: hidden;
   background: url("http://abduzeedo.com/files/originals/space-theme.jpg") center;
 }
 .type{
-  z-index: 1;
+  z-index: 2;
   height:500px;
   width:100%;
   overflow: hidden;
   background: url("http://www.ladytragik.com/temp/bound.jpg") center;
 }
 .handlettering{
-  z-index: 1;
+  z-index: 2;
   height:500px;
   width:100%;
   overflow: hidden;
@@ -63,21 +71,21 @@ h1{
   background-position: center;
 }
 .printed{
-  z-index: 1;
+  z-index: 2;
   height:500px;
   width:100%;
   overflow: hidden;
   background: url("http://buttonmanprinting.com/wp-content/uploads/2012/01/business-cards.jpg") center;
 }
 .web{
-  z-index: 1;
+  z-index: 2;
   height:500px;
   width:100%;
   overflow: hidden;
   background: url("http://cdn2.hubspot.net/hub/356930/file-738573519-jpg/Blog_Post_Images/shutterstock_176303801.jpg") center;
 }
 .cakes{
-  z-index: 1;
+  z-index: 2;
   height:500px;
   width:100%;
   overflow: hidden;
@@ -94,7 +102,7 @@ h1{
   font-size: 1.5em;
   color: grey;
   text-align: center;
-  display: inline-block;
+  display: block;
 }
 a{
   text-decoration: none;
