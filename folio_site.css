@@ -1,8 +1,8 @@
 .header{
    color: Grey;
-   font-family: Futura, sans-serif;
-   font-size:9em;
-   text-align: center;
+   font-family: smoothie shoppe, cursive;
+   font-size:7em;
+   margin-left: 200px;
    opacity: 0.5;
    z-index: 5;
 }
@@ -10,28 +10,30 @@
   font-family: futura, sans-serif;
   font-size: 1.5em;
   color: grey;
-  text-align: center;
+  margin-left: 206px;
   z-index: 5;
 }
 .intro{
   font-family: futura, sans-serif;
   font-size: 1em;
   color: grey;
-  text-align: center;
+  margin-left: 208px;
   z-index: 5;
+}
+
+.container{
+  height: 300px;
+  width:100%;
 }
 .deco_bar{
   height:300px;
   width:200px;
   background-color: pink;
+  position: absolute;
   opacity: 0.5;
   z-index: 1;
-  position: absolute;
 }
-/*.container{
-  height: 300px;
-  width:100%;
-}*/
+
 h1{
   font-family:futura, sans-serif;
   font-size:2em;
@@ -44,27 +46,27 @@ h1{
   width: 100%;
   background-color: pink;
   opacity: 0.5;
-  position:absolute;
+  position:inherit;
   z-index: 7;
-  margin-top: 420px;
+  margin-top: 600px;
 }
 .illustration{
   z-index: 2;
-  height:500px;
+  height:700px;
   width:100%;
   overflow: hidden;
   background: url("http://abduzeedo.com/files/originals/space-theme.jpg") center;
 }
 .type{
   z-index: 2;
-  height:500px;
+  height:700px;
   width:100%;
   overflow: hidden;
   background: url("http://www.ladytragik.com/temp/bound.jpg") center;
 }
 .handlettering{
   z-index: 2;
-  height:500px;
+  height:700px;
   width:100%;
   overflow: hidden;
   background-image: url("http://41.media.tumblr.com/afddfc93909f6c62a882f2f9cfefe18e/tumblr_n2p2cdydz81rte5gyo3_1280.jpg");
@@ -72,21 +74,21 @@ h1{
 }
 .printed{
   z-index: 2;
-  height:500px;
+  height:700px;
   width:100%;
   overflow: hidden;
   background: url("http://buttonmanprinting.com/wp-content/uploads/2012/01/business-cards.jpg") center;
 }
 .web{
   z-index: 2;
-  height:500px;
+  height:700px;
   width:100%;
   overflow: hidden;
   background: url("http://cdn2.hubspot.net/hub/356930/file-738573519-jpg/Blog_Post_Images/shutterstock_176303801.jpg") center;
 }
 .cakes{
   z-index: 2;
-  height:500px;
+  height:700px;
   width:100%;
   overflow: hidden;
   background: url("http://foodnetwork.sndimg.com/content/dam/images/food/fullset/2015/1/6/0/fnd_naked-chocolate-cake-i-am-baker.jpg.rend.snigalleryslide.jpeg") center;
@@ -111,3 +113,87 @@ a{
 a:hover{
   color: black;
 }
+.whitespace{
+  height:100px;
+}
+#gallery a {
+    text-decoration:none;
+    }
+
+#gallery .item {
+    width: 200px; height: 200px; overflow: hidden;
+    float: left;
+    border: 5px solid #333;
+    margin: 5px;
+    }
+
+#gallery .item a {
+    overflow: hidden;
+    }
+ 
+#gallery .item a img {
+    height: 100%;
+    align-self: center;
+    }
+
+.lightbox {
+    /** Hide the lightbox */
+    opacity: 0;
+
+    /** Apply basic lightbox styling */
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    color:#333333;
+    -webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+    }
+
+.lightbox:target {
+    /** Show lightbox when it is target */
+    opacity: 1;
+    outline: none;
+    top: 0;
+}
+
+.lightbox .box {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    min-width:500px;
+    margin: 2% auto;
+    padding:10px 20px 10px 20px;
+    background-color:#FFF;
+    box-shadow: 0px 1px 26px -3px #777777;
+    }
+
+.lightbox .title {
+    margin:0;
+    padding:0 0 10px 0px;
+    border-bottom:1px #ccc solid;
+    font-size:22px;
+    }
+
+.lightbox .content {
+    display:block;
+    position:relative;
+    }
+
+.lightbox .close {
+    display:block;
+    float:right;
+    text-decoration:none;
+    font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size:22px;
+    color:#858585;
+    }
+
+.clear {
+    display:block;
+    clear:both;
+    }
