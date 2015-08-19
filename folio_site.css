@@ -130,7 +130,7 @@ a:hover{
 #gallery .item a {
     overflow: hidden;
     }
- 
+
 #gallery .item a img {
     height: 100%;
     align-self: center;
@@ -197,3 +197,44 @@ a:hover{
     display:block;
     clear:both;
     }
+    .lightbox .content .desc {
+      z-index:99;
+      bottom:0;
+      position:absolute;
+      padding:10px;
+      margin:0 0 4px 0;
+      background:rgba(0,0,0,0.8);
+
+      color:#fff;
+      font-size:17px;
+      opacity:0;
+      transition: opacity ease-in-out 0.5s;
+      }
+
+  .lightbox .content:hover .desc  {
+      opacity:1;
+  }
+
+  .lightbox .next,
+  .lightbox .prev,
+  .lightbox .close {
+      display:block;
+      text-decoration:none;
+      font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size:22px;
+      color:#858585;
+      }
+
+  .prev {
+      float:left;
+      }
+
+  .next,
+  .close {
+      float:right;
+      }
+
+  .clear {
+      display:block;
+      clear:both;
+      }
