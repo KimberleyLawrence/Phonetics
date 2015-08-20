@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="demo1">
+  <head>
+    <link rel="stylesheet" type="text/css" href="folio_site.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+    <link rel="stylesheet" href="angular-bootstrap-lightbox.min.css" />
+    <script src="angular-bootstrap-lightbox.min.js"></script>
+    <script type="text/javascript" src="type.js"></script>
+
+    <title>Kimberley Lawrence</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="deco_bar"></div>
+      <div class="header">
+       Kimberley Lawrence
+      </div>
+      <p class="sub_header"> Typography Gallery </p>
+      <p class="intro"> Click on an image to scroll through the gallery.  </p>
+    </div>
+    <ul class="gallery gallery1" ng-controller="GalleryCtrl">
+      <li ni-repeat="image in images">
+        <a ng-click="openLightboxModal($index)">
+          <img ng-src="{{image.thumbUrl}}" class="img-thumbnail">
+        </a>
+      </li>
+    </ul>
+  </body>
+</html>
