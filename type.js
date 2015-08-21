@@ -8,8 +8,8 @@ angular.module('demo1').controller('GalleryCtrl', function ($scope, Lightbox) {
       'caption': 'This image has dimensions 2048x1519 and the img element is scaled to fit inside the window.'
     },
     {
-      'url': 'https://farm8.staticflickr.com/7300/12807911134_ff56d1fb3b_b.jpg',
-      'thumbUrl': 'https://farm8.staticflickr.com/7300/12807911134_ff56d1fb3b_s.jpg'
+      'url': "http://www.gettyimages.in/gi-resources/images/Homepage/Category-Creative/UK/UK_Creative_462809583.jpg",
+      'thumbUrl': "http://www.gettyimages.in/gi-resources/images/Homepage/Category-Creative/UK/UK_Creative_462809583.jpg"
     },
     {
       'url': 'https://farm1.staticflickr.com/400/20228789791_52fb84917f_b.jpg',
