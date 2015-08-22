@@ -1,11 +1,9 @@
 angular.module('demo1', ['bootstrapLightbox']);
-
 angular.module('demo1').controller('GalleryCtrl', function ($scope, Lightbox) {
   $scope.images = [
-    {
-      'url': 'https://farm6.staticflickr.com/5830/20552523531_e1efec8d49_k.jpg',
-      'thumbUrl': 'https://farm6.staticflickr.com/5830/20552523531_ef720cd2f1_s.jpg',
-      'caption': 'This image has dimensions 2048x1519 and the img element is scaled to fit inside the window.'
+    {'url': 'https://farm6.staticflickr.com/5830/20552523531_e1efec8d49_k.jpg',
+    'thumbUrl': 'https://farm6.staticflickr.com/5830/20552523531_ef720cd2f1_s.jpg',
+    'caption': 'This image has dimensions 2048x1519 and the img element is scaled to fit inside the window.'
     },
     {
       'url': "http://www.gettyimages.in/gi-resources/images/Homepage/Category-Creative/UK/UK_Creative_462809583.jpg",
