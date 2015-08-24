@@ -1,0 +1,60 @@
+.header{
+   color: Grey;
+   font-family: smoothie shoppe, cursive;
+   font-size:5em;
+   margin-left: 200px;
+   opacity: 0.5;
+   z-index: 5;
+}
+.sub_header{
+  font-family: futura, sans-serif;
+  font-size: 1.5em;
+  color: grey;
+  margin-left: 206px;
+  z-index: 5;
+}
+.intro{
+  font-family: futura, sans-serif;
+  font-size: 1em;
+  color: grey;
+  margin-left: 208px;
+  z-index: 5;
+}
+
+.container{
+  height: 300px;
+  width:100%;
+}
+.deco_bar{
+  height:300px;
+  width:200px;
+  background-color: pink;
+  position: absolute;
+  opacity: 0.5;
+  z-index: 1;
+}
+.gallerywindow{
+  height: 600px;
+  width: 100%;
+  background-color: yellow;
+}
+.thumbnails img {
+	height: 80px;
+	/*border: 4px solid #555;*/
+  /*padding: 1px;*/
+	margin: 0 10px 10px 0;
+}
+
+.thumbnails img:hover {
+	cursor:pointer;
+}
+
+.preview img {
+	border: 4px solid #444;
+	padding: 1px;
+  height:400px;
+  overflow: auto;
+}
+.preview{
+  overflow: hidden;
+}

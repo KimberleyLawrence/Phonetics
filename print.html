@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="print.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="deco_bar"></div>
+      <div class="header">
+        Kimberley Lawrence
+      </div>
+      <p class="sub_header"> Cake and crafts Gallery </p>
+      <p class="intro"> Click on an image to scroll through the gallery.  </p>
+    </div>
+    <div class="gallery" align="center">
+      <div class="preview" align="center">
+        <h2 id="caption"></h2>
+         <img name="preview" src="http://www.marketsforgood.org/wp-content/uploads/2015/08/LOVE-love-36983825-1680-1050.jpg" alt=""/>
+      </div>
+      <div class="thumbnails">
+	      <img onmouseover="preview.src=img1.src; caption.innerHTML=img1.alt" name="img1" src="http://www.marketsforgood.org/wp-content/uploads/2015/08/LOVE-love-36983825-1680-1050.jpg" alt="image1" />
+        <img onmouseover="preview.src=img2.src; caption.innerHTML=img2.alt" name="img2" src="http://filedelumina.ro/wp-content/uploads//2015/07/inimi.jpg" alt="image2"/>
+        <img onmouseover="preview.src=img3.src; caption.innerHTML=img3.alt" name="img3" src="http://www.npg.si.edu/exhibit/feature/images/schoeller_full.jpg" alt="image3"/>
+      </div>
+    </div>
+  </body>
+</html>
