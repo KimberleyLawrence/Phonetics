@@ -1,29 +1,29 @@
 <!DOCTYPE html>
-<html ng-app="demo1">
+<html>
   <head>
+    <title></title>
     <link rel="stylesheet" type="text/css" href="folio_site.css" />
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
-    <link rel="stylesheet" href="angular-bootstrap-lightbox.min.css" />
-    <script src="angular-bootstrap-lightbox.min.js"></script>
-    <script type="text/javascript" src="type.js"></script>
-
-    <title>Kimberley Lawrence</title>
   </head>
   <body>
     <div class="container">
       <div class="deco_bar"></div>
       <div class="header">
-       Kimberley Lawrence
+        Kimberley Lawrence
       </div>
-      <p class="sub_header"> Typography Gallery </p>
-      <p class="intro"> Click on an image to scroll through the gallery.  </p>
+      <p class="sub_header"> Typography gallery </p>
+    <!--  <p class="intro"> Click on an image to scroll through the gallery.  </p>-->
     </div>
-    <ul class="gallery gallery1" ng-controller="GalleryCtrl">
-      <li ni-repeat="image in images">
-        <a ng-click="openLightboxModal($index)">
-          <img ng-src="{{image.thumbUrl}}" class="img-thumbnail">
-        </a>
-      </li>
-    </ul>
+    <div class="gallery" align="center">
+      <div class="preview" align="center">
+        <p id="caption">Hover over images for descriptions </p>
+         <img name="preview" src="http://www.marketsforgood.org/wp-content/uploads/2015/08/LOVE-love-36983825-1680-1050.jpg" alt=""/>
+
+      </div>
+      <div class="thumbnails">
+	      <img onmouseover="preview.src=img1.src; caption.innerHTML=img1.alt" name="img1" src="http://www.marketsforgood.org/wp-content/uploads/2015/08/LOVE-love-36983825-1680-1050.jpg" alt="image1" />
+        <img onmouseover="preview.src=img2.src; caption.innerHTML=img2.alt" name="img2" src="http://filedelumina.ro/wp-content/uploads//2015/07/inimi.jpg" alt="image2"/>
+        <img onmouseover="preview.src=img3.src; caption.innerHTML=img3.alt" name="img3" src="http://www.npg.si.edu/exhibit/feature/images/schoeller_full.jpg" alt="image3"/>
+      </div>
+    </div>
   </body>
 </html>

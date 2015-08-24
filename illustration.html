@@ -1,74 +1,29 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
   <head>
+    <title></title>
     <link rel="stylesheet" type="text/css" href="folio_site.css" />
-    <title>Kimberley Lawrence</title>
   </head>
   <body>
     <div class="container">
-        <div class="deco_bar"></div>
-        <div class="header">
-         Kimberley Lawrence
-        </div>
-        <p class="sub_header"> Illustration Gallery </p>
-        <p class="intro"> Click on an image to scroll through the gallery.  </p>
+      <div class="deco_bar"></div>
+      <div class="header">
+        Kimberley Lawrence
+      </div>
+      <p class="sub_header"> Illustration gallery </p>
+    <!--  <p class="intro"> Click on an image to scroll through the gallery.  </p>-->
     </div>
-    <section id="gallery">
-    <!-- thumbnail image wrapped in a link, thumbnail displays-->
-      <section class="item">
-        <a href="#img1">
-          <img src="https://s-media-cache-ak0.pinimg.com/736x/1a/17/d7/1a17d722fcf5edcd41219c1471189259.jpg">
-        </a>
-      </section>
-      <section class="item">
-        <a href="#img2">
-          <img src="http://41.media.tumblr.com/tumblr_mb7u1bICrF1qzkweeo1_1280.jpg">
-        </a>
-      </section>
-      <section class="item">
-        <a href="#img3">
-          <img src="http://webneel.com/daily/sites/default/files/images/daily/05-2013/11-illustration-by-mustafa-soydan.jpg">
-        </a>
-      </section>
-      <section class="item">
-        <a href="#img4">
-          <img src="http://webneel.com/daily/sites/default/files/images/daily/05-2013/11-illustration-by-mustafa-soydan.jpg">
-        </a>
-      </section>
-    </section>
-    <!-- pop up gallery with tabs -->
-    <div class="lightbox" id="img2">
-      <div class="box">
-        <a class="close" href="#">X</a>
-        <p class="title">Picture one</p>
-        <a class="prev" href="#img3">Previous</a>
-        <a class="next" href="#img1">Next</a>
-        <div class="clear"></div>
-        <div class="content">
-          <img src="http://41.media.tumblr.com/tumblr_mb7u1bICrF1qzkweeo1_1280.jpg">
-        </div>
+    <div class="gallery" align="center">
+      <div class="preview" align="center">
+        <p id="caption">Hover over images for descriptions </p>
+         <img name="preview" src="http://www.marketsforgood.org/wp-content/uploads/2015/08/LOVE-love-36983825-1680-1050.jpg" alt=""/>
+
+      </div>
+      <div class="thumbnails">
+	      <img onmouseover="preview.src=img1.src; caption.innerHTML=img1.alt" name="img1" src="http://www.marketsforgood.org/wp-content/uploads/2015/08/LOVE-love-36983825-1680-1050.jpg" alt="image1" />
+        <img onmouseover="preview.src=img2.src; caption.innerHTML=img2.alt" name="img2" src="http://filedelumina.ro/wp-content/uploads//2015/07/inimi.jpg" alt="image2"/>
+        <img onmouseover="preview.src=img3.src; caption.innerHTML=img3.alt" name="img3" src="http://www.npg.si.edu/exhibit/feature/images/schoeller_full.jpg" alt="image3"/>
       </div>
     </div>
-
-
-  <div class="lightbox" id="img2">
-  <div class="box">
-    <a class="close" href="#">X</a>
-    <p class="title">Lorem ipsum dolor sit amet</p>
-    <div class="content">
-        <img src="img/img2.jpg">
-    </div>
-  </div>
-</div>
-
-<div class="lightbox" id="img3">
-  <div class="box">
-    <a class="close" href="#">X</a>
-    <p class="title">Lorem ipsum dolor sit amet</p>
-    <div class="content">
-        <img src="img/img3.jpg">
-    </div>
-  </div>
-</div>
   </body>
 </html>

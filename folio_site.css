@@ -23,16 +23,8 @@
   margin-left: 790px;
   z-index: 5;
 }
-.deco_bar{
-  height:100px;
-  width:100%;
-  /*background-color: pink;*/
-  position: absolute;
-  opacity: 0.5;
-  z-index: 1;
-}
 h1{
-  font-family:futura, sans-serif;
+  font-family:didot, sans-serif;
   font-size:2em;
   text-align: center;
   position:relative;
@@ -40,33 +32,32 @@ h1{
   color:#404040;
 }
 .floating_banner{
-  height:50px;
+  height:45px;
   width: 100%;
   background-color: pink;
-  opacity: 0.5;
+  opacity: 0.8;
   position:inherit;
   z-index: 7;
-  margin-top: 300px;
+  margin-top: 330px;
 }
 .background{
   background-color: #D8D8D8;
   height:850px;
-  width: 1270px;
+  width: 1250px;
   border-radius: 5px;
   margin: auto;
   z-index: 1;
   padding: 15px;
 }
+
 .background_img{
-  z-index: 2;
   height:400px;
   width:400px;
-  overflow: auto;
-  display: inline-block;
-  margin: 5px;
-  border-radius: 5px;
   border: 4px solid #404040;
-  padding: 1px;
+  border-radius: 5px;
+	padding:2px;
+  overflow: auto;
+  background-color: grey;
 }
 .background_img img:hover{
   cursor:pointer;
@@ -74,6 +65,7 @@ h1{
 
 #illustration{
   background: url("http://abduzeedo.com/files/originals/space-theme.jpg") center;
+  padding:1px;
 }
 #type{
   background: url("http://www.ladytragik.com/temp/bound.jpg") center;
@@ -93,11 +85,12 @@ h1{
 .contact{
   margin-right: 20px;
   z-index: 1;
-  font-family: futura, sans-serif;
-  font-size: 1em;
   color: grey;
   text-align: right;
   display: list-item;
+}
+.fa{
+  color:grey;
 }
 a{
   text-decoration: none;
