@@ -1,45 +1,43 @@
-.header{
-   color: Grey;
-   font-family: smoothie shoppe, cursive;
-   font-size:5em;
-   margin-left: 200px;
-   opacity: 0.5;
-   z-index: 5;
-}
-.sub_header{
-  font-family: futura, sans-serif;
-  font-size: 1.5em;
-  color: grey;
-  margin-left: 206px;
-  z-index: 5;
-}
 .intro{
   font-family: futura, sans-serif;
   font-size: 1em;
   color: grey;
-  margin-left: 208px;
+  text-align: center;
   z-index: 5;
 }
 
-.container{
-  height: 300px;
-  width:100%;
+.header{
+   color: #f493be;
+   font-family: smoothie shoppe, sans-serif;
+   font-size:5em;
+   text-align: center;
+   z-index: 5;
+   line-height: 10px;
+   margin-top: 50px;
+   letter-spacing: -3px;
+}
+.sub_header{
+  font-family: didot, sans-serif;
+  font-size: 1.5em;
+  color: #404040;
+  margin-left: 790px;
+  z-index: 5;
 }
 .deco_bar{
-  height:300px;
-  width:200px;
-  background-color: pink;
+  height:100px;
+  width:100%;
+  /*background-color: pink;*/
   position: absolute;
   opacity: 0.5;
   z-index: 1;
 }
-
 h1{
   font-family:futura, sans-serif;
   font-size:2em;
   text-align: center;
   position:relative;
   z-index: 5;
+  color:#404040;
 }
 .floating_banner{
   height:50px;
@@ -48,187 +46,92 @@ h1{
   opacity: 0.5;
   position:inherit;
   z-index: 7;
-  margin-top: 600px;
+  margin-top: 300px;
 }
-.illustration{
+.background{
+  background-color: #D8D8D8;
+  height:850px;
+  width: 1270px;
+  border-radius: 5px;
+  margin: auto;
+  z-index: 1;
+  padding: 15px;
+}
+.background_img{
   z-index: 2;
-  height:700px;
-  width:100%;
-  overflow: hidden;
+  height:400px;
+  width:400px;
+  overflow: auto;
+  display: inline-block;
+  margin: 5px;
+  border-radius: 5px;
+  border: 4px solid #404040;
+  padding: 1px;
+}
+.background_img img:hover{
+  cursor:pointer;
+}
+
+#illustration{
   background: url("http://abduzeedo.com/files/originals/space-theme.jpg") center;
 }
-.type{
-  z-index: 2;
-  height:700px;
-  width:100%;
-  overflow: hidden;
+#type{
   background: url("http://www.ladytragik.com/temp/bound.jpg") center;
 }
-.handlettering{
-  z-index: 2;
-  height:700px;
-  width:100%;
-  overflow: hidden;
-  background-image: url("http://41.media.tumblr.com/afddfc93909f6c62a882f2f9cfefe18e/tumblr_n2p2cdydz81rte5gyo3_1280.jpg");
-  background-position: center;
+#handlettering{
+  background: url("http://41.media.tumblr.com/afddfc93909f6c62a882f2f9cfefe18e/tumblr_n2p2cdydz81rte5gyo3_1280.jpg") center;
 }
-.printed{
-  z-index: 2;
-  height:700px;
-  width:100%;
-  overflow: hidden;
+#printed{
   background: url("http://buttonmanprinting.com/wp-content/uploads/2012/01/business-cards.jpg") center;
 }
-.web{
-  z-index: 2;
-  height:700px;
-  width:100%;
-  overflow: hidden;
+#web{
   background: url("http://cdn2.hubspot.net/hub/356930/file-738573519-jpg/Blog_Post_Images/shutterstock_176303801.jpg") center;
 }
-.cakes{
-  z-index: 2;
-  height:700px;
-  width:100%;
-  overflow: hidden;
+#cakes{
   background: url("http://foodnetwork.sndimg.com/content/dam/images/food/fullset/2015/1/6/0/fnd_naked-chocolate-cake-i-am-baker.jpg.rend.snigalleryslide.jpeg") center;
 }
 .contact{
-  height:50px;
-  width: 100%;
-  background-color: pink;
-  opacity: 0.5;
-  position:absolute;
+  margin-right: 20px;
   z-index: 1;
   font-family: futura, sans-serif;
-  font-size: 1.5em;
+  font-size: 1em;
   color: grey;
-  text-align: center;
-  display: block;
+  text-align: right;
+  display: list-item;
 }
 a{
   text-decoration: none;
 }
-
-a:hover{
-  color: black;
+.thumbnails img {
+	height: 80px;
+	margin: 0;
 }
 
-
-#gallery a {
-    text-decoration:none;
-    }
-
-#gallery .item {
-    width: 200px; height: 200px; overflow: hidden;
-    float: left;
-    border: 5px solid #333;
-    margin: 5px;
-    }
-
-#gallery .item a {
-    overflow: hidden;
-    }
-
-#gallery .item a img {
-    height: 100%;
-    align-self: center;
-    }
-
-.lightbox {
-    /** Hide the lightbox */
-    opacity: 0;
-
-    /** Apply basic lightbox styling */
-    position: fixed;
-    z-index: 9999;
-    width: 100%;
-    height: 100%;
-    top: -100%;
-    left: 0;
-    color:#333333;
-    -webkit-transition: opacity .5s ease-in-out;
-    -moz-transition: opacity .5s ease-in-out;
-    -o-transition: opacity .5s ease-in-out;
-    transition: opacity .5s ease-in-out;
-    }
-
-.lightbox:target {
-    /** Show lightbox when it is target */
-    opacity: 1;
-    outline: none;
-    top: 0;
+.thumbnails img:hover {
+	cursor:pointer;
 }
+.gallery{
+  background-color: #D8D8D8;
+  height:560px;
+  width: 700px;
+  border-radius: 5px;
+  margin: auto;
 
-.lightbox .box {
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
-    min-width:500px;
-    margin: 2% auto;
-    padding:10px 20px 10px 20px;
-    background-color:#FFF;
-    box-shadow: 0px 1px 26px -3px #777777;
-    }
-
-.lightbox .title {
-    margin:0;
-    padding:0 0 10px 0px;
-    border-bottom:1px #ccc solid;
-    font-size:22px;
-    }
-
-.lightbox .content {
-    display:block;
-    position:relative;
-    }
-
-.lightbox .close {
-    display:block;
-    float:right;
-    text-decoration:none;
-    font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size:22px;
-    color:#858585;
-    }
-
-.clear {
-    display:block;
-    clear:both;
-    }
-    .lightbox .content .desc {
-      z-index:99;
-      bottom:0;
-      position:absolute;
-      padding:10px;
-      margin:0 0 4px 0;
-      background:rgba(0,0,0,0.8);
-
-      color:#fff;
-      font-size:17px;
-      opacity:0;
-      transition: opacity ease-in-out 0.5s;
-      }
-
-  .lightbox .content:hover .desc  {
-      opacity:1;
-  }
-
-  .lightbox .next,
-  .lightbox .prev,
-  .lightbox .close {
-      display:block;
-      text-decoration:none;
-      font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-size:22px;
-      color:#858585;
-      }
-
-  .prev {
-      float:left;
-      }
-
-  .next,
-  .close {
-      float:right;
-      }
+}
+.preview img {
+	border: 4px solid #404040;
+  border-radius: 5px;
+	padding: 1px;
+  height:400px;
+  overflow: auto;
+}
+.preview{
+  overflow: hidden;
+}
+#caption{
+  font-family: didot, sans-serif;
+  font-size: 1em;
+  color: #404040;
+  text-align: center;
+  z-index: 5;
+}
